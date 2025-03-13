@@ -29,7 +29,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Tailwind CSS Custom Configuration Section -->
+    <!-- Tailwind CSS Custom Configuration Section
     <script>
       tailwind.config = {
         theme: {
@@ -40,7 +40,7 @@
           },
         },
       };
-    </script>
+    </script> -->
 
     <!-- Style Section -->
     <style>
@@ -62,10 +62,10 @@
     <header>
       <!-- Nav Section -->
       <nav
-        class="flex justify-between items-center p-4 border-b-1 border-gray-200"
+        class="flex justify-between items-center p-2 md:p-4 border-b-1 border-gray-200"
       >
         <div class="logo-container">
-          <img src="./images/Logo.png" alt="PH Tube Logo" />
+          <img class="w-[140px]" src="./images/Logo.png" alt="PH Tube Logo" />
         </div>
         <div class="sort-btn-container hidden md:block">
           <button class="btn bg-[#25252533] text-black">Sorted by View</button>
@@ -73,6 +73,13 @@
         <div class="blog-btn-container">
           <button class="btn bg-[#FF1F3D] text-white">Blog</button>
         </div>
+      </nav>
+      <!-- Category Section --> 
+      <nav id="category-container" class="flex justify-center items-center p-2 md:p-4 gap-5">
+        <button class="category-btn btn btn-sm bg-[#25252526] text-black">All</button>
+        <button class="category-btn btn btn-sm bg-[#25252526] text-black">Music</button>
+        <button class="category-btn btn btn-sm bg-[#25252526] text-black">Comedy</button>
+        <button class="category-btn btn btn-sm bg-[#25252526] text-black">Drawing</button>
       </nav>
     </header>
 
@@ -83,6 +90,6 @@
     <footer></footer>
 
     <!-- Script Section -->
-    <script src=""></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
